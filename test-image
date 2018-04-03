@@ -28,14 +28,14 @@ CMD ["npm", "test"]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<YOUR_USERNAME>/<YOUR_REPOSITORY>.git"
+    "url": "git+https://github.com/SNivas12345/jenkinsTesting.git"
   },
   "author": "Your name",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/<YOUR_USERNAME>/<YOUR_REPOSITORY>/issues"
+    "url": "https://github.com/SNivas12345/jenkinsTesting/issues"
   },
-  "homepage": "https://github.com/<YOUR_USERNAME>/<YOUR_REPOSITORY>#readme",
+  "homepage": "https://github.com/SNivas12345/jenkinsTesting-#readme",
     "dependencies": {
     "mocha": "^4.0.1",
     "mocha-junit-reporter": "^1.15.0",
