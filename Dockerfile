@@ -1,19 +1,17 @@
 FROM node:6-alpine
 
-# Create Reports directory
-RUN mkdir -p /JUnit
-
 # Create server working directory
-RUN mkdir -p /home/node/tests
-WORKDIR /home/node/tests
+RUN mkdir -p /home/node/app
+WORKDIR /home/node/app
 
-# Install app dependencies
-COPY /test-image/package.json /home/node/tests
+# Install server dependencies
+COPY /express-image/package.json /home/node/app
 RUN npm install
 
-# Copy test source
-COPY test.js /home/node/tests
+# Copy node Application
+COPY app.js /home/node/app
 
+# Open port
 EXPOSE 9000
 
-CMD ["npm", "test"]
+CMD ["npm", "start"

@@ -1,25 +1,17 @@
 {
-  "name": "test-image",
+  "name": "express-image",
   "version": "1.0.0",
-  "description": "This is a Mocha Test Server",
-  "scripts": {
-    "mocha": "mocha --reporter spec test.js",
-    "test": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=/JUnit/reports.xml test.js"
-  },
+  "description": "Test Node Application",
+  "author": "Your name",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SNivas12345/jenkins.git"
   },
-  "author": "Your name",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SNivas12345/jenkins/issues"
+  "scripts": {
+    "start": "node app.js"
   },
-  "homepage": "https://github.com/SNivas12345/jenkins#readme",
-    "dependencies": {
-    "mocha": "^4.0.1",
-    "mocha-junit-reporter": "^1.15.0",
-    "should": "^13.1.3",
-    "supertest": "^3.0.0"
+  "dependencies": {
+    "express": "^4.13.3"
   }
 }
